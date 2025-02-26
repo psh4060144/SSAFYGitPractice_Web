@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div p {  /* 자손 결합자: 해당 class 아래의 모든 class 에 적용됨. */
+      color: blue;
+      margin-left: 50px;
+      font-size: 20px;
+    }
+    div > p {  /* 자식 결합자: 해당 class 바로 아래에 있는 class 에만 적용됨. */
+      color: crimson;
+      margin-left: 10px;
+      font-size: 40px;
+    }
+
+  </style>
+</head>
+<body>
+  <div>
+    <p>자식</p>
+      <span>
+        <p>손자</p>
+      </span>
+    <p>자식</p>
+  </div>
+    </body>
+</html>
